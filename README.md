@@ -1,15 +1,16 @@
-# 🎂 Birthday Email Automation (Python)
+# 🎂 Birthday Wishes Email Sender (Python)
 
-An automated Python application that sends personalized birthday emails using CSV data and dynamic templates.
+A Python automation project that sends personalized birthday emails by reading data from a CSV file and using email templates.
 
 ---
 
 ## 🚀 Features
 
 * 📅 Reads birthday data from a CSV file
-* 📧 Sends automated birthday emails
-* 🎨 Uses customizable text templates
-* 🔁 Randomly selects a birthday message
+* 🎉 Sends personalized birthday emails automatically
+* 📝 Uses random email templates for variation
+* 🔍 Uses pandas for data handling
+* ⏱️ Can be scheduled to run daily using PythonAnywhere
 
 ---
 
@@ -17,45 +18,59 @@ An automated Python application that sends personalized birthday emails using CS
 
 * Python
 * Pandas
-* SMTP (Email Automation)
+* SMTP (Email)
+* PythonAnywhere
 
 ---
 
 ## 📂 Project Structure
 
-```
-birthday-email-automation/
+```text
+birthday-email-sender/
 │
 ├── main.py
 ├── birthdays_sample.csv
-└── letter_templates/
-    ├── letter_1.txt
-    ├── letter_2.txt
-    └── letter_3.txt
+├── letter_templates/
+│   ├── letter_1.txt
+│   ├── letter_2.txt
+│   └── letter_3.txt
 ```
 
 ---
 
 ## ⚙️ How to Run
 
-1. Clone the repository
-2. Add your email and app password in `main.py`
-3. Run the script:
+1. Install required libraries:
 
+```bash
+pip install pandas
 ```
+
+2. Open `main.py` and update:
+
+```python
+MY_EMAIL = "YOUR_EMAIL"
+MY_PASSWORD = "YOUR_PASSWORD"
+```
+
+3. Run:
+
+```bash
 python main.py
 ```
 
 ---
 
-## 📌 Notes
+## 💡 Notes
 
-* Real email credentials are not included for security reasons
-* A sample CSV file is provided for testing
-* Emails are sent only if today's date matches a birthday
+* Uses CSV file to store birthday data
+* Automatically selects a random email template
+* Sends email only if today's date matches a birthday
+* Can be scheduled on PythonAnywhere to run daily
 
 ---
 
-## ⭐ Acknowledgement
+## ⭐ About this project
 
-Built as part of my Python learning journey.
+Built while learning Python and experimenting with automation, file handling, and email integration.
+
